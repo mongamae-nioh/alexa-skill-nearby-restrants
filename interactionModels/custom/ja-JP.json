@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "近くのラーメン屋さん",
+      "invocationName": "近くのなになに屋さん",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
