@@ -1,0 +1,115 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "近くのラーメン屋さん",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "GoNextIntent",
+          "slots": [
+            {
+              "name": "Next",
+              "type": "Next"
+            }
+          ],
+          "samples": [
+            "オーケー",
+            "{Next} お願いします",
+            "{Next} お願い",
+            "{Next} 言って",
+            "お願いします",
+            "聞きたい",
+            "うん",
+            "お願い",
+            "はい",
+            "{Next} 進んで",
+            "{Next} 教えて",
+            "この {Next} のラーメン屋",
+            "この {Next}",
+            "{Next} のラーメン屋は",
+            "{Next} のラーメン屋教えて",
+            "{Next} のラーメン屋",
+            "{Next} のお店は",
+            "{Next} いって",
+            "{Next} のお店教えて",
+            "{Next} の店教えて",
+            "{Next} のお店",
+            "{Next} の店",
+            "{Next}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "その他の"
+              }
+            },
+            {
+              "name": {
+                "value": "別"
+              }
+            },
+            {
+              "name": {
+                "value": "別の"
+              }
+            },
+            {
+              "name": {
+                "value": "この次"
+              }
+            },
+            {
+              "name": {
+                "value": "そのほかの"
+              }
+            },
+            {
+              "name": {
+                "value": "次の"
+              }
+            },
+            {
+              "name": {
+                "value": "他の"
+              }
+            },
+            {
+              "name": {
+                "value": "次"
+              }
+            }
+          ],
+          "name": "Next"
+        }
+      ]
+    }
+  },
+  "version": "45"
+}
