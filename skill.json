@@ -1,1 +1,89 @@
-
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "近くのラーメン屋の口コミをお知らせします。",
+          "examplePhrases": [
+            "アレクサ、近くのラーメン屋さん"
+          ],
+          "keywords": [
+            "ラーメン",
+            "らーめん",
+            "口コミ",
+            "グルメ",
+            "レストラン",
+            "食事",
+            "位置情報",
+            "GPS",
+            "車",
+            "移動",
+            "ドライブ",
+            "ランチ",
+            "ディナー",
+            "ぐるなび",
+            "ラーメン屋",
+            "空腹",
+            "軽食"
+          ],
+          "name": "近くのカレー屋さん",
+          "description": "[概要]\n現在地の近くにあるラーメン屋さんの口コミをお知らせします。\nなお、このスキルを利用する場合は、位置情報サービスへのアクセスをスキルに許可する必要があります。\nAlexaアプリからこのスキルへアクセスし、許可してください。\n\n[利用想定ユーザー]\nEcho Autoなどの移動を前提としたデバイスを利用しているユーザー向けのスキルです。\n固定デバイスの場合は位置情報が利用できない場合があります。\n\n[使い方]\n・「アレクサ、近くのラーメン屋さん」：現在地から半径2キロ以内にあるラーメン屋さんの口コミを2件ずつお知らせします。\n・（スキル発動中に）「アレクサ、次の店」：口コミが3件以上ある場合、別のお店の口コミへ進みます。\n・（スキル発動中に）「アレクサ、もう一回」：直前の口コミをもう一度聞くことができます。ただし直前が最後の口コミだった場合は聞くことはできません。\n\n[口コミ情報について]\nぐるなびWebサービスのレストラン検索API、応援口コミAPIを利用しています。\nhttps://api.gnavi.co.jp/api/scope/\n\n[スキルのアイコンについて]\nhttps://kohacu.com/20170528post-9704/\n\n利用規約\nhttps://kohacu.com/tos/",
+          "smallIconUri": "file://assets/images/ja-JP_smallIconUri.png",
+          "largeIconUri": "file://assets/images/ja-JP_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "デバイス要件\n- Echo AutoやAlexaアプリなど位置情報を取得できる端末\n\nテスト項目\n- 各インテントの動作が正常であること\n- Alexaアプリからスキルを起動し開発者コンソールから位置情報が取得できていること\n- 位置情報をもとにお店の口コミ情報が取得できること\n- 自動車へEcho Autoを装着し移動地点によりお店の情報が変わること\n- お店がヒットする、ヒットしないときの処理が正常であること",
+      "category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "JP"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-west-2:128268616402:function:7b6222bb-3992-4506-a319-9430091379b1:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:128268616402:function:7b6222bb-3992-4506-a319-9430091379b1:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:128268616402:function:7b6222bb-3992-4506-a319-9430091379b1:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:128268616402:function:7b6222bb-3992-4506-a319-9430091379b1:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "permissions": [
+      {
+        "name": "alexa::devices:all:geolocation:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "ja-JP": {
+          "privacyPolicyUrl": "https://8kkzmwzfvviilohzakpqdq-on.drv.tw/public_html/nearbyramenshop/privacypolicy.html"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}
